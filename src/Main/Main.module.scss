@@ -1,0 +1,20 @@
+.mainContent {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.day {
+  background-color: #ffffff00;
+  color: #000000;
+}
+
+.night {
+  background-color: #333333c0;
+  color: #ffffff;
+  p {
+    color: #000000;
+  }
+  h3 {
+    color: #000000;
+  }
+}

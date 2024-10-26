@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "895a",
+      "name": "vlad",
+      "email": "vlad@mail.ru",
+      "password": "123"
+    },
+    {
+      "id": "c3b4",
+      "name": "123",
+      "email": "123@mail.ru",
+      "password": "123"
+    },
+    {
+      "id": "9936",
+      "name": "vlad123",
+      "email": "vlad123@mail.ru",
+      "password": "123123"
+    }
+  ]
+}

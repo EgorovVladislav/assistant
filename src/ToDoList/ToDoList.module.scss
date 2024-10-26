@@ -1,0 +1,138 @@
+.toDoList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &::before {
+    content: "";
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231001/pngtree-completed-to-do-list-icon-a-3d-rendering-of-a-notebook-image_13576111.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .taskMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .taskProgress {
+      width: 45%;
+      h3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .task {
+        display: flex;
+        min-height: 30px;
+        .taskList {
+          background: rgba(186, 186, 186, 0.818);
+          padding-left: 10px;
+          border: none;
+          width: 100%;
+          font-size: 15px;
+          outline: none;
+        }
+        .taskAdd {
+          border: none;
+          border-radius: 2px;
+          cursor: pointer;
+          width: 100px;
+          font-size: 15px;
+          background: #ff445c;
+          color: white;
+          &:hover {
+            transition: 1s;
+            transform: scale(1.1);
+          }
+        }
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        outline: none;
+        list-style-type: none;
+        .containerList {
+          min-height: 40px;
+          width: 100%;
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+          border-bottom: 1px solid;
+          .containerBtn {
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            button {
+              width: 30px;
+              height: 30px;
+              background-color: #ff445c;
+              border: none;
+              border-radius: 50%;
+              align-items: center;
+              cursor: pointer;
+              i {
+                font-size: 15px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .taskCompleted {
+      width: 40%;
+      h3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        outline: none;
+        list-style-type: none;
+        .containerList {
+          min-height: 40px;
+          width: 100%;
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+          border-bottom: 1px solid;
+
+          button {
+            width: 30px;
+            height: 30px;
+            background-color: #ff445c;
+            border: none;
+            border-radius: 50%;
+            align-items: center;
+            cursor: pointer;
+            i {
+              font-size: 15px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

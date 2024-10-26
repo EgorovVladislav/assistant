@@ -1,0 +1,163 @@
+.containerProfile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  &::before {
+    content: "";
+    background-image: url(https://fonetastik.com/wp-content/uploads/2024/02/mrachnyi-fon-48-1.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+    z-index: -1;
+  }
+
+  .profile {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .profile__imageAdd {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__avatar {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    &__imageLabel {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 15px;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    &__imageInput {
+      display: none;
+    }
+
+    &__name {
+      font-size: 1.8em;
+      margin: 10px 0;
+      color: #333;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    &__email,
+    &__password {
+      display: flex;
+      width: 100%;
+      margin: 5px 0;
+      color: #555;
+      font-size: 1em;
+      background-color: #f1f1f1;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 17px;
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+      }
+    }
+
+    &__editButton {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+
+      input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: border-color 0.3s ease;
+        width: 100%;
+
+        &:focus {
+          border-color: #4caf50;
+          outline: none;
+        }
+      }
+
+      .passwordWrapper {
+        position: relative;
+
+        .passwordToggle {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          color: #555;
+
+          &.visible {
+            color: #4caf50;
+          }
+        }
+      }
+
+      .error {
+        color: red;
+        font-size: 0.9em;
+        margin-top: 5px;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}

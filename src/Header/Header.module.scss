@@ -1,0 +1,38 @@
+.header {
+  width: 100vw;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff445d;
+
+  p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .themeToggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    i {
+      transition: color 0.2s;
+
+      &.fa-sun {
+        color: yellow;
+      }
+
+      &.fa-moon {
+        color: rgb(50, 90, 104);
+      }
+    }
+  }
+}
